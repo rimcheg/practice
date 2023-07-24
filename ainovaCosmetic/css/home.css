@@ -322,6 +322,7 @@ body {
     width: 215px;
     margin-top: 30px;
 }
+                                /* animation start */
 .counter {
     display: flex;
     justify-content: center;
@@ -373,43 +374,43 @@ body {
     display: inline-block;  
     width: .5em;  
     overflow: hidden;  
-    animation: timing 100s 1 step-end;
+    animation: timing 20s 1 step-end;
 }
 .number_31::before {
-    content: '075247233';
+    content: '375247233';
 }
 .number_31::after {
-    content: '024133441';
+    content: '124133441';
 }
 .number_27::before {
-    content: '073687232';
+    content: '273687232';
 }
 .number_27::after {
-    content: '024131847';
+    content: '724131847';
 }
 .number_02::before{
     content: '079467230';
 }
 .number_02::after{
-    content: '024139042';
+    content: '224139042';
 }
 .number_62::before {
-    content: '079431736';
+    content: '679431736';
 }
 .number_62::after {
-    content: '024645242';
+    content: '224645242';
 }
 .number_25::before {
-    content: '079431732';
+    content: '279431732';
 }
 .number_25::after {
-    content: '073687235';
+    content: '573687235';
 }
 .number_44::before {
-    content: '024131844';
+    content: '424131844';
 }
 .number_44::after {
-    content: '079431734';
+    content: '479431734';
 }
 @keyframes timing {
   0.3%{text-indent: -.5em;}
@@ -427,3 +428,41 @@ body {
     color: #13468C;
     text-align: center;
 }
+                                /* animation end */
+                                /* content end */
+                                /* footer start */
+.footer {
+    display: flex;
+    padding: 60px 140px;
+    border-radius: 10px;
+    justify-content: space-between;
+    column-gap: 150px;
+    background-color: blue;
+}
+.footer li {
+    list-style: none;
+}
+.footer ul {
+    padding: 0;
+}
+.footer h5 {
+    font-size: 14px;
+    color: white;
+}
+.footer p {
+    font-size: 22px;
+}
+.footer h2 {
+    font-size: 16px;
+    color: white;
+}
+.flex_sa {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer form {
+    border-radius: 4px;
+    background-color: white;
+    height: 45px;
+}
+                                /* footer end */
