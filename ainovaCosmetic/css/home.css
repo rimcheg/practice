@@ -189,7 +189,10 @@ body {
     overflow-x: hidden;
 }
 .absolute {
-    position: absolute;
+    position: relative;
+    left: 90px;
+    width: 725px;
+    transition: 1500ms;
 }
 .corusel {
     display: flex;
@@ -470,12 +473,15 @@ body {
                                 /* footer end */
 
                                 /* popup */
+.fixed {
+    overflow: hidden;
+}
 .popup_header {
     background-color: white;
     position: relative;
     z-index: 5;
     top: -700px;
-    transition: 500ms;
+    transition: 300ms;
 }
 .popup_club, .popup_partner {
     display: flex;
@@ -507,5 +513,11 @@ body {
     row-gap: 25px;
 }
 .active_popup_menu.popup_header {
-    top: 0
+    top: 0;
+}
+.blure_all {
+    filter: blur(5px);
+}
+.right {
+    left: -475px;
 }
