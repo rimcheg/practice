@@ -5,7 +5,7 @@ body {
     box-sizing: border-box;
 }
 
-.flex_sb {
+.flex_sb, .flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -145,11 +145,11 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    column-gap: 120px;
+    row-gap: 120px;
     margin: 120px 0;
     background-color: #FFFFFF;
 }
-.content_1 {
+.content_1, .content_2, .content_5 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -180,6 +180,14 @@ body {
 }
 .column_30 {
     row-gap: 30px;
+    position: relative;
+    width: 900px;
+    height: 600px;
+    left: 145px;
+    overflow-x: hidden;
+}
+.absolute {
+    position: absolute;
 }
 .corusel {
     display: flex;
@@ -208,4 +216,214 @@ body {
     justify-content: center;
     align-items: center;
     row-gap: 35px;
+}
+.corusel_nav {
+    position: absolute;
+    right: 110px;
+    bottom: 0;
+    display: flex;
+    column-gap: 15px;
+}
+.corusel_nav button {
+    width: 55px;
+    height: 55px;
+    background-color: white;
+}
+.to_left {
+    background-image: url(../image/arrow-right.png);
+    rotate: 180deg;
+}
+.to_right {
+    background-image: url(../image/arrow-right.png);
+}
+.content_2_content, .content_4_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+.content_2 h2 {
+    font-size: 30px;
+    margin: 0;
+}
+.content_2 h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+.content_3 {
+    /* overflow: hidden; */
+    position: relative;
+}
+.content_3 image {
+    position: absolute;
+    z-index: 1;
+}
+.content_3_content {
+    position: absolute;
+    z-index: 2;
+    width: 460px;
+    height: 600px;
+    background-color: white;
+    top: 60px;
+    left: 140px;
+    padding: 40px 30px 40px 70px;
+    box-sizing: border-box;
+}
+.content_3_content h2 {
+    font-size: 22px;
+    color: #13468C;
+    line-height: 30px;
+}
+.content_3_content h3 {
+    font-size: 18px;
+    line-height: 26px;
+}
+.content_3_content button, .content_4_content button, .content_5 button {
+    font-size: 16px;
+    width: 165px;
+    height: 56px;
+    background-color: #13468C;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.content_4_content {
+    align-items: flex-start;
+}
+.content_4_content h2 {
+    font-size: 48px;
+    line-height: 70px;
+}
+.content_4_content h3 {
+    font-size: 18px;
+    line-height: 30px;
+}
+.content_4_content button {
+    width: 230px;
+}
+.content_5 {
+    display: flex;
+    background-color: #E4DED5;
+}
+.content_5 div {
+    box-sizing: border-box;
+    padding: 55px;
+}
+.content_5 h2 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 45px;
+}
+.content_5 button {
+    width: 215px;
+    margin-top: 30px;
+}
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 150px;
+}
+.counter_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+    width: 140px;
+    height: 170px;
+}
+.counter_content img {
+    width: 37px;
+    height: 37px;
+}
+.counter_content h2 {
+    font-size: 30px;
+    margin: 0;
+    color: #13468C;
+}
+.number,
+.number_31,
+.number_27,
+.number_02,
+.number_62,
+.number_25,
+.number_44 {
+    margin: 0;
+    font-size: 48px;
+    color: #13468C;
+    position: relative;
+    width: 1em; height: 1em;
+}
+.number_31::before,
+.number_31::after,
+.number_27::before,
+.number_27::after,
+.number_02::before,
+.number_02::after,
+.number_62::before,
+.number_62::after,
+.number_25::before,
+.number_25::after,
+.number_44::before, 
+.number_44::after { 
+    display: inline-block;  
+    width: .5em;  
+    overflow: hidden;  
+    animation: timing 100s 1 step-end;
+}
+.number_31::before {
+    content: '075247233';
+}
+.number_31::after {
+    content: '024133441';
+}
+.number_27::before {
+    content: '073687232';
+}
+.number_27::after {
+    content: '024131847';
+}
+.number_02::before{
+    content: '079467230';
+}
+.number_02::after{
+    content: '024139042';
+}
+.number_62::before {
+    content: '079431736';
+}
+.number_62::after {
+    content: '024645242';
+}
+.number_25::before {
+    content: '079431732';
+}
+.number_25::after {
+    content: '073687235';
+}
+.number_44::before {
+    content: '024131844';
+}
+.number_44::after {
+    content: '079431734';
+}
+@keyframes timing {
+  0.3%{text-indent: -.5em;}
+  0.6%{text-indent: -1em;}
+  0.9%{text-indent: -1.5em;}
+  1.2%{text-indent: -2em;}
+  1.5%{text-indent: -2.5em;}
+  1.8%{text-indent: -3em;}
+  2.1%{text-indent: -3.5em;}
+  2.4%{text-indent: -4em;}
+}
+.flex {
+    justify-content: left;
+    font-size: 48px;
+    color: #13468C;
+    text-align: center;
 }
