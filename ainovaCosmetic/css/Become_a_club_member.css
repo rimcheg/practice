@@ -1,0 +1,125 @@
+                                /* Become_a_club_member header start */
+.button_center button {
+    width: 230px;
+    height: 56px;
+    background-color: white;
+    border-radius: 4px;
+    border: 0;
+    color: blue;
+}
+.header {
+    background-image: url(../image/becomeClub.png);
+    background-repeat: no-repeat;
+    height: 650px;
+    background-size: cover;
+}
+.header_nav {
+    column-gap: 140px;
+}
+.button_center {
+    display: flex;
+    justify-content: center;
+    height: 75%;
+    align-items: end;
+}
+                                /* Become_a_club_member_header end */
+                                /* Become_a_club_member_content start */
+.Become_a_club_member_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Become_a_club_member_content_1 h1 {
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
+    margin-top: 60px;
+}
+.Become_a_club_member_content_1 h2 {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    margin-top: 25px;
+}
+.Become_a_club_member_content_2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 825px;
+    row-gap: 25px;
+    column-gap: 25px;
+    margin-top: 60px;
+}
+.Become_a_club_member_content_cart {
+    width: 400px;
+    height: 220px;
+    padding: 20px 0 0 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 25px lightgray;
+}
+.Become_a_club_member_content_cart h2 {
+    font-size: 22px;
+    color: blue;
+    margin: 0;
+}
+.Become_a_club_member_content_cart h3 {
+    font-size: 18px;
+    color: gray;
+    margin: 0;
+    line-height: 25px;
+}
+.Become_a_club_member_content_cart img {
+    width: 50px;
+    height: 50px;
+}
+.Become_a_club_member_content_3 {
+    margin: 130px 0 170px 0;
+}
+.Become_a_club_member_content_3 h2 {
+    font-size: 48px;
+}
+.text_center {
+    justify-content: center !important;
+}
+.Become_a_club_member_content_3 h3 {
+    font-size: 18px;
+}
+.Become_a_club_member_content_3 li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Become_a_club_member_content_3 span {
+    width: 960px;
+    border: 1px solid lightgray;
+}
+.Become_a_club_member_content_3 h5 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: gray;
+}
+.reed_more_1,
+.reed_more_2,
+.reed_more_3,
+.reed_more_4,
+.reed_more_5 {
+    cursor: pointer;
+}
+.rotate_img {
+    rotate: 180deg;
+}
+.reed_more_1_text,
+.reed_more_2_text,
+.reed_more_3_text,
+.reed_more_4_text,
+.reed_more_5_text {
+    display: none;
+}
+.vizible_text {
+    display: block;
+}

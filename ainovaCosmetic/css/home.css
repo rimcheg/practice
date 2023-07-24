@@ -25,7 +25,9 @@ body {
     position: relative;
     overflow: hidden;
 }
-
+.nav_logo a {
+    color: gold !important;
+}
 .header_nav {
     height: 85px;
     display: flex;
@@ -520,4 +522,8 @@ body {
 }
 .right {
     left: -475px;
+}
+a {
+    color: white;
+    text-decoration: none;
 }
