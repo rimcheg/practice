@@ -1,0 +1,131 @@
+                                /* header start */
+.header {
+    background-image: url(../image/Become_a_partner_head.png);
+    background-repeat: no-repeat;
+    height: 650px;
+    background-size: cover;
+}
+                                /* header and */
+                                /* content start */
+.become_a_partner_content_1 span {
+    color: black;
+}
+.fl_center, .fl_center_blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fl_center h2 {
+    font-size: 48px;
+    margin: 120px 0 0 0;
+    padding: 0;
+}
+.fl_center_blue {
+    width: 100%;
+    background: blue;
+    margin-top: 50px;
+}
+.fx_col {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center;
+}
+.fx_col button {
+    color: blue !important;
+    margin-bottom: 20px;
+}
+.fl_center_blue h3 {
+    color: white;
+    font-size: 48px;
+    margin: 20px 0 0 0;
+}
+.fl_center_blue h4 {
+    color: white;
+    font-style: 18px;
+    margin: 0;
+}
+.become_a_partner_content_media {
+    margin: 160px 0 80px 0;
+}
+.fl_center h3 {
+    font-size: 48px;
+    color: black;
+}
+.partner_carts {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+.partner_cart {
+    width: 300px;
+    padding: 350px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    box-shadow: 0 0 25px gray;
+    padding: 25px 40px;
+}
+.partner_cart h2 {
+    font-size: 22px;
+    color: blue;
+}
+.partner_cart h3 {
+    font-size: 18px;
+    color: gray;
+}
+.partner_cart img {
+    width: 50px;
+    height: 50px;
+}
+.mt_50 {
+    margin-top: 50px;
+}
+.partner_quest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partner_quest_mg {
+    margin: 80px 0 125px 0;
+}
+.partner_content_fl {
+    display: flex;
+    justify-content: center;
+}
+.partner_content_wr {
+    width: 1160px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-top: 125px;
+}
+.wr_cart {
+    display: flex;
+    width: 565px;
+    height: 265px;
+    background-color: #E4DED5;
+    box-shadow: 0 0 35px lightgray;
+}
+.cart_content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    color: blue;
+}
+.cart_content h2 {
+    font-size: 48px;
+    margin: 0;
+}
+.cart_content h3 {
+    font-style: 18px;
+    margin: 0;
+}
+.cart_img {  
+    display: block;
+    width: 50%;
+}

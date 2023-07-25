@@ -37,6 +37,7 @@ body {
     background-color: #13468C;
     align-self: center;
     padding: 0 20px;
+    column-gap: 140px;
 }
 
 .nav_logo,
@@ -526,4 +527,8 @@ body {
 a {
     color: white;
     text-decoration: none;
+}
+.active_link {
+    color: gold;
+    cursor: default !important;
 }
