@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+#nav_template {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+#nav_template h2 {
+    text-transform: uppercase;
+}
+.body_page {
+    display: flex;
+}
+.display_none {
+    display: none;
+}
+.didplay_visible {
+    display: block;
+}
+
