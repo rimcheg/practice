@@ -10,6 +10,8 @@ for (value of nav_templates) {
     let input_wishlist_div = document.createElement('div');
     input_wishlist_div.classList.add(value + "_main", "display_none");
     document.getElementById('nav_template').appendChild(button_nav);
+    button_nav.classList.add('tooltip')
+    button_nav.setAttribute('data-tooltip', 'Choose a section')
     document.getElementById('input_wishlist').appendChild(input_wishlist_div);
     buttons.push("button_nav_" + value)
     inputs.push(value + "_main")
@@ -24,7 +26,6 @@ for (const button of buttons) {
     
     var myHandler = function () {
         document.querySelector('.' + full).classList.toggle('display_none');
-
     }
     btn_сl.addEventListener('click', myHandler, false);
 };
@@ -32,19 +33,45 @@ for (const button of buttons) {
 for (const input of inputs) {
     
     let div = document.createElement('div');
+    let divl = document.createElement('div');
+    let divr = document.createElement('div');
     let inp = document.createElement('input');
+    inp.setAttribute('type', 'text')
+    inp.setAttribute('pattern', '[a-z   ]')
     let add_inp_btn = document.createElement('button');
     add_inp_btn.innerText = "+";
+    let txt = document.createElement('h6')
+    txt.innerText = 'WRITE' + ' ' + input + ' ' + 'MUST HAVE'
     let info_inp = document.getElementsByClassName('' + input)[0];
-    info_inp.appendChild(div).appendChild(inp)
+    
+    info_inp.appendChild(txt)
+    txt.classList.add('tooltip')
+    txt.setAttribute('data-tooltip', 'Use onli ;')
+    
+    info_inp.appendChild(div)
+    div.classList.add('flex', input + '_info_div')
+
+    info_inp.appendChild(div).appendChild(divl).appendChild(inp)
+    divl.classList.add('left_part', input)
     inp.classList.add(input + '_info_input')
-    info_inp.appendChild(div).appendChild(add_inp_btn)
+
+    info_inp.appendChild(div).appendChild(divr).appendChild(add_inp_btn)
+    add_inp_btn.classList.add('tooltip')
+    add_inp_btn.setAttribute('data-tooltip', 'add 1 more input')
     add_inp_btn.classList.add('add_' + input + '_info_button', 'add_info_button')
         
 };
 
 a = document.getElementsByClassName('add_info_button')
-console.log(a)
+for (let i = 0; i < a.length; i++) {
+    const add_inp = a[i];
+    add_inp.onclick = function () {
+        let inp = document.createElement('input');
+        let c = add_inp.closest('div').previousElementSibling;
+        c.appendChild(inp)
+    }
+}
+
 
 
 

@@ -10,6 +10,9 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    border-right: 2px solid lightgray;
 }
 #nav_template h2 {
     text-transform: uppercase;
@@ -23,4 +26,57 @@ body {
 .didplay_visible {
     display: block;
 }
+.flex {
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+}
+#input_wishlist {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+    box-sizing: border-box;
+    border-right: 2px solid lightgray;
+}
+#input_wishlist h2, #input_wishlist h6 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-align: center;
+}
+.header_main_info_div {
+    flex-wrap: wrap;
+}
+.left_part {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
 
+
+
+
+/* ///////////__________/////////// tooltips ///////////__________/////////// */
+
+
+.tooltip {
+	cursor: help;
+}
+
+.tooltip::after {
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 8px 8px 8px 0px;
+	color: #FFF;
+	content: attr(data-tooltip); /* Главная часть кода, определяющая содержимое всплывающей подсказки */
+	margin-top: -15px;
+	opacity: 0;
+	padding: 3px 7px;
+	position: absolute;
+	visibility: hidden;
+			
+	transition: all 0.4s ease-in-out;
+}
+		
+.tooltip:hover::after {
+	opacity: 1;
+	visibility: visible;
+}
