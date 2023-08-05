@@ -69,7 +69,6 @@ document.getElementById('Cize_table_button').onclick = Page_toogle('Cize_table_b
 
 document.getElementById('On_click_catalog').onclick = () => {
     let active_page = document.getElementsByClassName('active_page')[0].classList;
-    console.log(active_page)
 
     document.querySelector('#Open_menu_catalog').classList.toggle('not_on_display');
     document.querySelector('#On_click_catalog').classList.toggle('active_link');
@@ -86,7 +85,6 @@ document.getElementById('On_click_catalog').onclick = () => {
 
 document.getElementById('On_click_seazon').onclick = () => {
     let active_page = document.getElementsByClassName('active_page')[0].classList;
-    console.log(active_page)
 
     document.querySelector('#Open_menu_seazon').classList.toggle('not_on_display');
     document.querySelector('#On_click_seazon').classList.toggle('active_link');
