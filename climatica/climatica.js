@@ -142,6 +142,8 @@ document.getElementsByClassName('see_more_seasons')[0].onclick = () => {
 let target = document.querySelector('#Target1');
 let target2 = document.querySelector('#Target2');
 let target3 = document.querySelector('#Target3');
+let target4 = document.querySelector('#Target4')
+let target5 = document.querySelector('#Target5')
 
 
 fetch("https://fakerapi.it/api/v1/products?_quantity=20&_taxes=25&_categories_type=integer")
@@ -333,11 +335,19 @@ fetch("https://fakerapi.it/api/v1/products?_quantity=20&_taxes=25&_categories_ty
                 product_img_section.appendChild(sales_img);
                 let for_sale = product_card.cloneNode(true);
                 target2.appendChild(for_sale);
+                if (target5.childElementCount < 4) {
+                    let for_home_sale = product_card.cloneNode(true);
+                    target5.appendChild(for_home_sale)
+                }
             }
             if (product.price > 5000) {
                 product_img_section.appendChild(new_img);
                 let for_new = product_card.cloneNode(true);
                 target3.appendChild(for_new);
+                if (target4.childElementCount < 4) {
+                    let for_home_new = product_card.cloneNode(true);
+                    target4.appendChild(for_home_new)
+                }
             }
 
         }
@@ -364,6 +374,7 @@ let self_news_page_list = document.querySelectorAll('.news_item');
 
 for (let i = 0; i < self_news_page_list.length; i++) {
     const self_news_page = self_news_page_list[i];
+
     self_news_page.onclick = () => {
         let active_page = document.getElementsByClassName('active_page')[0];
         let news_article = self_news_page.cloneNode(true);

@@ -596,6 +596,8 @@ ul {
 #Target1,
 #Target2,
 #Target3,
+#Target4,
+#Target5,
 #News_page_content {
     flex-wrap: wrap;
     row-gap: 30px;
@@ -604,6 +606,8 @@ ul {
 #Target1,
 #Target2,
 #Target3,
+#Target4,
+#Target5,
 #News_page_content {
     margin: 15px 0;
     display: flex;
@@ -619,14 +623,17 @@ ul {
     row-gap: 15px;
     width: 295px;
 }
+
 .news_item h2 {
     font-style: 18px;
     font-weight: 700;
 }
+
 .news_item h3 {
     font-style: 14px;
     font-weight: 300;
 }
+
 #News button {
     width: 230px;
     height: 50px;
@@ -644,21 +651,25 @@ ul {
 #News_article {
     flex-direction: column;
 }
+
 .last_news_section {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
     margin-top: 50px;
 }
-.signature{
+
+.signature {
     display: flex;
     justify-content: space-between;
     padding: 0 80px;
 }
+
 .signature h2 {
     font-style: 36px;
     font-weight: 700;
 }
+
 .signature button {
     width: 165px;
     height: 45px;
@@ -666,18 +677,24 @@ ul {
     font-style: 14px;
     font-weight: 600;
 }
-#news_target{
+
+#news_target {
     display: flex;
     column-gap: 30px;
     justify-content: center;
+    flex-wrap: wrap;
 }
+
 .self_news {
     display: flex;
     justify-content: space-between;
 }
-.info_news, .self_news_img{
+
+.info_news,
+.self_news_img {
     width: 50%;
 }
+
 .self_news_name {
     font-size: 36px;
     font-weight: 700px;
@@ -685,14 +702,79 @@ ul {
     word-wrap: normal;
     margin: 50px 0;
 }
+
 .self_news_description {
     font-style: 14px;
     font-weight: 400px;
 }
+
 .self_news_img img {
     width: -webkit-fill-available;
     position: relative;
     top: -70px;
+}
+
+
+/* /////////////// Home page /////////////// */
+#Home {
+    flex-direction: column;
+    row-gap: 120px;
+    margin: 0;
+}
+
+#Home section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 40px;
+    margin-left: 120px;
+}
+
+.h3_target4,
+.h3_target5,
+.h3_news_target {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.info_section {
+    display: flex;
+    width: 100%;
+    margin: 0 !important;
+    flex-direction: row !important;
+}
+
+.home_info {
+    display: flex;
+    box-sizing: border-box;
+    margin: 50px;
+}
+
+.home_info h3 {
+    font-style: 24px;
+    font-weight: 700;
+}
+.home_info h4 {
+    font-style: 14px;
+    font-weight: 300;
+    margin: 15px 0 30px 0;
+}
+.home_info_img {
+    align-self: flex-end;
+}
+.home_info_img img{
+    position: relative;
+    bottom: 22px;
+}
+.home_info button {
+    width: 165px;
+    height: 50px;
+    border: none;
+    background-color: #FF6523;
+    color: white;
+    font-style: 16px;
+    font-weight: 600;
 }
 
 
