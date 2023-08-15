@@ -63,6 +63,7 @@ ul {
     background-color: white;
     box-sizing: border-box;
     overflow: hidden;
+    padding-bottom: 100px;
 }
 
 .footer {
@@ -73,6 +74,7 @@ ul {
     box-sizing: border-box;
     padding: 30px 0;
 }
+
 #Home,
 #Catalog,
 #Sales_product_list,
@@ -112,10 +114,12 @@ ul {
     flex-direction: column;
     align-items: center;
 }
+
 .flex_col {
     display: flex;
     flex-direction: column;
 }
+
 .flex {
     display: flex;
 }
@@ -393,6 +397,7 @@ ul {
 .with_dropdown {
     margin-left: 45px;
 }
+
 .see_more_size_dropduwn li {
     width: 35px;
 }
@@ -496,37 +501,49 @@ ul {
     margin: 0 20px;
     box-sizing: border-box;
 }
+
 .product_name_section {
     height: 32px;
 }
+
 .product_price_section {
     margin: 0;
     margin-top: 20px;
 }
+
 .product_name_section {
     justify-content: space-between;
 }
+
 .product_name {
     font-size: 14px;
     font-weight: 700;
 }
+
 .product_article {
     font-size: 10px;
     font-weight: 400;
     opacity: 50%;
 }
-.color_text, .season_text, .size_text {
+
+.color_text,
+.season_text,
+.size_text {
     font-size: 12px;
     font-weight: 300;
     opacity: 80%;
     width: 50px;
 }
-.product_color, .product_season, .product_size {
+
+.product_color,
+.product_season,
+.product_size {
     font-size: 14px;
     font-weight: 400;
 }
 
-.product_price_max_section, .product_price_min_section {
+.product_price_max_section,
+.product_price_min_section {
     width: 50%;
     display: flex;
     height: 65px;
@@ -535,19 +552,24 @@ ul {
     justify-content: center;
     column-gap: 10px;
 }
+
 .product_price_max_section {
-    border-right: 1px solid lightgray ;
+    border-right: 1px solid lightgray;
 }
-.price_max_text, .price_min_text {
+
+.price_max_text,
+.price_min_text {
     font-style: 12px;
     font-weight: 300;
     opacity: 80%;
 }
+
 .product_price_max {
     font-style: 18px;
     font-weight: 400;
     opacity: 50%;
 }
+
 .product_price_min {
     font-style: 18px;
     font-weight: 700;
@@ -573,15 +595,125 @@ ul {
 #New_product_list,
 #Target1,
 #Target2,
-#Target3 {
+#Target3,
+#News_page_content {
     flex-wrap: wrap;
     row-gap: 30px;
 }
 
 #Target1,
 #Target2,
-#Target3 {
-    margin-top: 15px;
+#Target3,
+#News_page_content {
+    margin: 15px 0;
     display: flex;
     column-gap: 30px;
 }
+
+
+/* ////////////////news page//////////////////// */
+
+.news_item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 295px;
+}
+.news_item h2 {
+    font-style: 18px;
+    font-weight: 700;
+}
+.news_item h3 {
+    font-style: 14px;
+    font-weight: 300;
+}
+#News button {
+    width: 230px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #FF6523;
+    background-color: white;
+    margin-top: 70px;
+    align-self: center;
+}
+
+
+/* ////////////////self news page//////////////////// */
+
+#News_article {
+    flex-direction: column;
+}
+.last_news_section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    margin-top: 50px;
+}
+.signature{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+.signature h2 {
+    font-style: 36px;
+    font-weight: 700;
+}
+.signature button {
+    width: 165px;
+    height: 45px;
+    border: 1px solid #FF6523;
+    font-style: 14px;
+    font-weight: 600;
+}
+#news_target{
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+.self_news {
+    display: flex;
+    justify-content: space-between;
+}
+.info_news, .self_news_img{
+    width: 50%;
+}
+.self_news_name {
+    font-size: 36px;
+    font-weight: 700px;
+    width: 90%;
+    word-wrap: normal;
+    margin: 50px 0;
+}
+.self_news_description {
+    font-style: 14px;
+    font-weight: 400px;
+}
+.self_news_img img {
+    width: -webkit-fill-available;
+    position: relative;
+    top: -70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////news page//////////////////// */

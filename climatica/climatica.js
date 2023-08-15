@@ -28,6 +28,7 @@ function Page_toogle(button_id, querySelector, page_name) {
 
             let active_page = document.getElementsByClassName('active_page')[0];
             let no_desk = document.getElementsByClassName('active_page');
+            let clear_self_news = document.getElementById('News_article');
 
             document.querySelector(querySelector).classList.toggle('display_none');
             document.querySelector(querySelector).classList.toggle('pos_init');
@@ -46,6 +47,15 @@ function Page_toogle(button_id, querySelector, page_name) {
                 document.querySelector('#Home').classList.add('pos_init');
                 document.querySelector('#Home').classList.add('active_page');
                 document.querySelector('#Home').classList.remove('display_none');
+            }
+
+
+            ///////remove self news
+            if (clear_self_news.classList.contains('display_none') && clear_self_news.childNodes.length > 0) {
+                let first_ch = clear_self_news.childNodes[0];
+                clear_self_news.removeChild(first_ch);
+                let sec_ch = clear_self_news.childNodes[0];
+                clear_self_news.removeChild(sec_ch);
             }
         }
     )
@@ -131,7 +141,7 @@ document.getElementsByClassName('see_more_seasons')[0].onclick = () => {
 
 let target = document.querySelector('#Target1');
 let target2 = document.querySelector('#Target2');
-let target3 = document.querySelector('#Target3')
+let target3 = document.querySelector('#Target3');
 
 
 fetch("https://fakerapi.it/api/v1/products?_quantity=20&_taxes=25&_categories_type=integer")
@@ -312,26 +322,130 @@ fetch("https://fakerapi.it/api/v1/products?_quantity=20&_taxes=25&_categories_ty
             let sales_img = document.createElement('img');
             sales_img.setAttribute('src', './images/card_img/Sales.png');
             sales_img.setAttribute('alt', 'sales');
-            sales_img.classList.add('sales_img')
+            sales_img.classList.add('sales_img');
 
             let new_img = document.createElement('img');
             new_img.setAttribute('src', './images/card_img/New.png');
             new_img.setAttribute('alt', 'new');
-            new_img.classList.add('new_img')
+            new_img.classList.add('new_img');
 
             if (product.price > 500 && product.price < 2000) {
                 product_img_section.appendChild(sales_img);
                 let for_sale = product_card.cloneNode(true);
-                target2.appendChild(for_sale)
+                target2.appendChild(for_sale);
             }
             if (product.price > 5000) {
                 product_img_section.appendChild(new_img);
                 let for_new = product_card.cloneNode(true);
-                target3.appendChild(for_new)
+                target3.appendChild(for_new);
             }
 
         }
     });
+
+
+//////news for home page
+
+let news_arr = document.querySelectorAll('.news_item');
+let news_target = document.querySelector('#news_target');
+
+for (i = 0; i < news_arr.length; i++) {
+    let news = news_arr[i];
+
+    if (i < 4) {
+        let for_news = news.cloneNode(true);
+        news_target.append(for_news);
+    }
+}
+
+//////self_news_page
+
+let self_news_page_list = document.querySelectorAll('.news_item');
+
+for (let i = 0; i < self_news_page_list.length; i++) {
+    const self_news_page = self_news_page_list[i];
+    self_news_page.onclick = () => {
+        let active_page = document.getElementsByClassName('active_page')[0];
+        let news_article = self_news_page.cloneNode(true);
+        let self_news = document.getElementById('News_article');
+        let select = document.querySelector('#News_article');
+        let new_child = news_article.childNodes;
+        let self_news_name = new_child[3];
+        let self_news_description = new_child[5];
+        let self_news_img = new_child[1]
+    
+        active_page.classList.remove('pos_init');
+        active_page.classList.remove('active_page');
+        active_page.classList.remove('blure');
+        active_page.classList.add('display_none');
+        select.classList.add('pos_init');
+        select.classList.add('active_page');
+        select.classList.remove('display_none');
+    
+        let news_info = document.createElement('div');
+        news_info.classList.add('self_news')
+        self_news.append(news_info);
+    
+        let info_news = document.createElement('div');
+        info_news.classList.add('info_news');
+        news_info.appendChild(info_news);
+        info_news.append(self_news_name);
+        self_news_name.classList.add('self_news_name');
+        info_news.append(self_news_description);
+        self_news_description.classList.add('self_news_description');
+    
+        news_info.append(self_news_img);
+        self_news_img.classList.add('self_news_img')
+    
+        let last_news_section = document.createElement('div');
+        last_news_section.classList.add('last_news_section');
+        self_news.append(last_news_section);
+    
+        let signature = document.createElement('div');
+        signature.classList.add('signature');
+        last_news_section.appendChild(signature);
+    
+        let signature_text = document.createElement('h2');
+        signature_text.innerText = 'Последние новости';
+        signature.appendChild(signature_text);
+    
+        let signature_button = document.createElement('button');
+        signature_button.innerText = 'Перейти';
+        signature_button.classList.add('to_news_page');
+        signature.appendChild(signature_button);
+    
+        let last_news = news_target.cloneNode(true);
+        last_news_section.append(last_news);
+    
+        let dtn_clk = document.getElementsByClassName('to_news_page')[0]
+        dtn_clk.onclick = () => {
+            let active_page = document.getElementsByClassName('active_page')[0];
+            let select = document.querySelector('#News');
+    
+            active_page.classList.remove('pos_init');
+            active_page.classList.remove('active_page');
+            active_page.classList.remove('blure');
+            active_page.classList.add('display_none');
+            select.classList.add('pos_init');
+            select.classList.add('active_page');
+            select.classList.remove('display_none');
+    
+            //// remove child
+            let first_ch = active_page.childNodes[0];
+            active_page.removeChild(first_ch);
+            let sec_ch = active_page.childNodes[0];
+            active_page.removeChild(sec_ch);
+        }
+    }   
+}
+
+
+
+
+
+
+
+
 
 
 

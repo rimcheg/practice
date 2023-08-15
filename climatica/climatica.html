@@ -155,301 +155,391 @@
                     </div>
                     <div id="Home" class="pos_init active_page">
                         <img src="./images/Group 115.png" alt="">
+                        <div id="news_target"></div>
                     </div>
                     <div id="Catalog" class="display_none">
                         <div class="flex_col">
                             <h2 class="page_name">каталог</h2>
                             <div class="flex">
                                 <div class="catalog_nav">
-                                    <ul>
+                                    <ul class="with_checkbox">
                                         <li>
-                                            <ul class="with_checkbox">
-                                                <li>
-                                                    <input type="checkbox" name="mans" id="mans_checkbox">
-                                                    <h3>Мужчинам</h3>
+                                            <input type="checkbox" name="mans" id="mans_checkbox">
+                                            <h3>Мужчинам</h3>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="womans" id="womans_checkbox">
+                                            <h3>Женщинам</h3>
+                                        </li>
+                                        <li class="with_dropdown">
+                                            <ul class="w_100">
+                                                <li class="flex_sb see_more_li see_more_type">
+                                                    <h3>ТИП ОбувИ</h3>
+                                                    <button>
+                                                        <img class="see_more_type_img"
+                                                            src="./images/Catalog_nav/Catalog_nav_top.png"
+                                                            alt="see_more">
+                                                    </button>
                                                 </li>
-                                                <li>
-                                                    <input type="checkbox" name="womans" id="womans_checkbox">
-                                                    <h3>Женщинам</h3>
-                                                </li>
-                                                <li class="with_dropdown">
-                                                    <ul class="w_100">
-                                                        <li class="flex_sb see_more_li see_more_type">
-                                                            <h3>ТИП ОбувИ</h3>
-                                                            <button>
-                                                                <img class="see_more_type_img"
-                                                                    src="./images/Catalog_nav/Catalog_nav_top.png"
-                                                                    alt="see_more">
-                                                            </button>
+                                                <li class="pos_rel_ovh">
+                                                    <ul class="dropdown_menu see_more_type_dropduwn">
+                                                        <li>
+                                                            <input type="checkbox" name="boots_type"
+                                                                id="boots_type_checkbox">
+                                                            <h5>Ботинки</h5>
                                                         </li>
-                                                        <li class="pos_rel_ovh">
-                                                            <ul class="dropdown_menu see_more_type_dropduwn">
-                                                                <li>
-                                                                    <input type="checkbox" name="boots_type"
-                                                                        id="boots_type_checkbox">
-                                                                    <h5>Ботинки</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="low_shoes_type"
-                                                                        id="low_shoes_type_checkbox">
-                                                                    <h5>Полуботинки</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="winter_shoes_type"
-                                                                        id="winter_shoes_type_checkbox">
-                                                                    <h5>Зимние туфли</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="sneakers_type"
-                                                                        id="sneakers_type_checkbox">
-                                                                    <h5>Кроссовки </h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="shoes_type"
-                                                                        id="shoes_type_checkbox">
-                                                                    <h5>Туфли </h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="sport_shoes_type"
-                                                                        id="sport_shoes_type_checkbox">
-                                                                    <h5>Спортивные туфли</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="flip_flops_type"
-                                                                        id="flip_flops_type_checkbox">
-                                                                    <h5>Шлепанцы</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="flip_flops_2_type"
-                                                                        id="flip_flops_2_type_checkbox">
-                                                                    <h5>Вьетнамки </h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="sandals_type"
-                                                                        id="sandals_type_checkbox">
-                                                                    <h5>Сандали</h5>
-                                                                </li>
-                                                            </ul>
+                                                        <li>
+                                                            <input type="checkbox" name="low_shoes_type"
+                                                                id="low_shoes_type_checkbox">
+                                                            <h5>Полуботинки</h5>
                                                         </li>
-                                                        <li class="flex_sb see_more_li see_more_color">
-                                                            <h3>Цвет</h3>
-                                                            <button>
-                                                                <img class="see_more_color_img"
-                                                                    src="./images/Catalog_nav/Catalog_nav_top.png"
-                                                                    alt="see_more">
-                                                            </button>
+                                                        <li>
+                                                            <input type="checkbox" name="winter_shoes_type"
+                                                                id="winter_shoes_type_checkbox">
+                                                            <h5>Зимние туфли</h5>
                                                         </li>
-                                                        <li class="pos_rel_ovh">
-                                                            <ul class="dropdown_menu see_more_color_dropduwn">
-                                                                <li>
-                                                                    <input type="checkbox" name="color_black"
-                                                                        id="color_black_chackbox">
-                                                                    <h5>Черный</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="color_white"
-                                                                        id="color_white_chackbox">
-                                                                    <h5>Белый</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="color_brown"
-                                                                        id="color_brown_chackbox">
-                                                                    <h5>Коричневый</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="color_grey"
-                                                                        id="color_grey_chackbox">
-                                                                    <h5>Серый</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="color_other"
-                                                                        id="color_other_chackbox">
-                                                                    <h5>другие</h5>
-                                                                </li>
-                                                            </ul>
+                                                        <li>
+                                                            <input type="checkbox" name="sneakers_type"
+                                                                id="sneakers_type_checkbox">
+                                                            <h5>Кроссовки </h5>
                                                         </li>
-                                                        <li class="flex_sb see_more_li see_more_size">
-                                                            <h3>Размер</h3>
-                                                            <button>
-                                                                <img class="see_more_size_img"
-                                                                    src="./images/Catalog_nav/Catalog_nav_top.png"
-                                                                    alt="see_more">
-                                                            </button>
+                                                        <li>
+                                                            <input type="checkbox" name="shoes_type"
+                                                                id="shoes_type_checkbox">
+                                                            <h5>Туфли </h5>
                                                         </li>
-                                                        <li class="pos_rel_ovh">
-                                                            <ul class="dropdown_menu see_more_size_dropduwn">
-                                                                <li>
-                                                                    <input type="checkbox" name="size_29"
-                                                                        id="size_29_checkbox">
-                                                                    <h5>29</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="size_30"
-                                                                        id="size_30_checkbox">
-                                                                    <h5>30</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="size_31"
-                                                                        id="size_31_checkbox">
-                                                                    <h5>31</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="size_32"
-                                                                        id="size_32_checkbox">
-                                                                    <h5>32</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="size_33"
-                                                                        id="size_33_checkbox">
-                                                                    <h5>33</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="size_34"
-                                                                        id="size_34_checkbox">
-                                                                    <h5>34</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="size_35"
-                                                                        id="size_35_checkbox">
-                                                                    <h5>35</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="size_36"
-                                                                        id="size_36_checkbox">
-                                                                    <h5>36</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="size_37"
-                                                                        id="size_37_checkbox">
-                                                                    <h5>37</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="size_38"
-                                                                        id="size_38_checkbox">
-                                                                    <h5>38</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="size_39"
-                                                                        id="size_39_checkbox">
-                                                                    <h5>39</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="size_40"
-                                                                        id="size_40_checkbox">
-                                                                    <h5>40</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="size_41"
-                                                                        id="size_41_checkbox">
-                                                                    <h5>41</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="size_42"
-                                                                        id="size_42_checkbox">
-                                                                    <h5>42</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="size_43"
-                                                                        id="size_43_checkbox">
-                                                                    <h5>43</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="size_44"
-                                                                        id="size_44_checkbox">
-                                                                    <h5>44</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="size_45"
-                                                                        id="size_45_checkbox">
-                                                                    <h5>45</h5>
-                                                                </li>
-                                                            </ul>
+                                                        <li>
+                                                            <input type="checkbox" name="sport_shoes_type"
+                                                                id="sport_shoes_type_checkbox">
+                                                            <h5>Спортивные туфли</h5>
                                                         </li>
-                                                        <li class="flex_sb see_more_li see_more_material">
-                                                            <h3>Материал</h3>
-                                                            <button>
-                                                                <img class="see_more_material_img"
-                                                                    src="./images/Catalog_nav/Catalog_nav_top.png"
-                                                                    alt="see_more">
-                                                            </button>
+                                                        <li>
+                                                            <input type="checkbox" name="flip_flops_type"
+                                                                id="flip_flops_type_checkbox">
+                                                            <h5>Шлепанцы</h5>
                                                         </li>
-                                                        <li class="pos_rel_ovh">
-                                                            <ul class="dropdown_menu see_more_material_dropduwn">
-                                                                <li>
-                                                                    <input type="checkbox" name="leather"
-                                                                        id="leather_checkbox">
-                                                                    <h5>Кожа</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="textile"
-                                                                        id="textile_checkbox">
-                                                                    <h5>Ткань</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="leatherette"
-                                                                        id="leatherette_checkbox">
-                                                                    <h5>Кожзам</h5>
-                                                                </li>
-                                                            </ul>
+                                                        <li>
+                                                            <input type="checkbox" name="flip_flops_2_type"
+                                                                id="flip_flops_2_type_checkbox">
+                                                            <h5>Вьетнамки </h5>
                                                         </li>
-                                                        <li class="flex_sb see_more_li see_more_seasons">
-                                                            <h3>Сезон</h3>
-                                                            <button>
-                                                                <img class="see_more_seasons_img"
-                                                                    src="./images/Catalog_nav/Catalog_nav_top.png"
-                                                                    alt="see_more">
-                                                            </button>
-                                                        </li>
-                                                        <li class="pos_rel_ovh">
-                                                            <ul class="dropdown_menu see_more_season_dropduwn">
-                                                                <li>
-                                                                    <input type="checkbox" name="spring_autumn"
-                                                                        id="spring_autumn_checkbox">
-                                                                    <h5>Осень — Весна</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="winter"
-                                                                        id="winter_checkbox">
-                                                                    <h5>Зима</h5>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="checkbox" name="summer"
-                                                                        id="summer_checkbox">
-                                                                    <h5>Лето</h5>
-                                                                </li>
-                                                            </ul>
+                                                        <li>
+                                                            <input type="checkbox" name="sandals_type"
+                                                                id="sandals_type_checkbox">
+                                                            <h5>Сандали</h5>
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                <li>
-                                                    <input type="checkbox" name="news" id="news_checkbox">
-                                                    <h3>Новинки</h3>
+                                                <li class="flex_sb see_more_li see_more_color">
+                                                    <h3>Цвет</h3>
+                                                    <button>
+                                                        <img class="see_more_color_img"
+                                                            src="./images/Catalog_nav/Catalog_nav_top.png"
+                                                            alt="see_more">
+                                                    </button>
                                                 </li>
-                                                <li>
-                                                    <input type="checkbox" name="sales" id="sales_checkbox">
-                                                    <h3>Распродажа</h3>
+                                                <li class="pos_rel_ovh">
+                                                    <ul class="dropdown_menu see_more_color_dropduwn">
+                                                        <li>
+                                                            <input type="checkbox" name="color_black"
+                                                                id="color_black_chackbox">
+                                                            <h5>Черный</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="color_white"
+                                                                id="color_white_chackbox">
+                                                            <h5>Белый</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="color_brown"
+                                                                id="color_brown_chackbox">
+                                                            <h5>Коричневый</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="color_grey"
+                                                                id="color_grey_chackbox">
+                                                            <h5>Серый</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="color_other"
+                                                                id="color_other_chackbox">
+                                                            <h5>другие</h5>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="flex_sb see_more_li see_more_size">
+                                                    <h3>Размер</h3>
+                                                    <button>
+                                                        <img class="see_more_size_img"
+                                                            src="./images/Catalog_nav/Catalog_nav_top.png"
+                                                            alt="see_more">
+                                                    </button>
+                                                </li>
+                                                <li class="pos_rel_ovh">
+                                                    <ul class="dropdown_menu see_more_size_dropduwn">
+                                                        <li>
+                                                            <input type="checkbox" name="size_29" id="size_29_checkbox">
+                                                            <h5>29</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="size_30" id="size_30_checkbox">
+                                                            <h5>30</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="size_31" id="size_31_checkbox">
+                                                            <h5>31</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="size_32" id="size_32_checkbox">
+                                                            <h5>32</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="size_33" id="size_33_checkbox">
+                                                            <h5>33</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="size_34" id="size_34_checkbox">
+                                                            <h5>34</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="size_35" id="size_35_checkbox">
+                                                            <h5>35</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="size_36" id="size_36_checkbox">
+                                                            <h5>36</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="size_37" id="size_37_checkbox">
+                                                            <h5>37</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="size_38" id="size_38_checkbox">
+                                                            <h5>38</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="size_39" id="size_39_checkbox">
+                                                            <h5>39</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="size_40" id="size_40_checkbox">
+                                                            <h5>40</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="size_41" id="size_41_checkbox">
+                                                            <h5>41</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="size_42" id="size_42_checkbox">
+                                                            <h5>42</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="size_43" id="size_43_checkbox">
+                                                            <h5>43</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="size_44" id="size_44_checkbox">
+                                                            <h5>44</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="size_45" id="size_45_checkbox">
+                                                            <h5>45</h5>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="flex_sb see_more_li see_more_material">
+                                                    <h3>Материал</h3>
+                                                    <button>
+                                                        <img class="see_more_material_img"
+                                                            src="./images/Catalog_nav/Catalog_nav_top.png"
+                                                            alt="see_more">
+                                                    </button>
+                                                </li>
+                                                <li class="pos_rel_ovh">
+                                                    <ul class="dropdown_menu see_more_material_dropduwn">
+                                                        <li>
+                                                            <input type="checkbox" name="leather" id="leather_checkbox">
+                                                            <h5>Кожа</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="textile" id="textile_checkbox">
+                                                            <h5>Ткань</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="leatherette"
+                                                                id="leatherette_checkbox">
+                                                            <h5>Кожзам</h5>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="flex_sb see_more_li see_more_seasons">
+                                                    <h3>Сезон</h3>
+                                                    <button>
+                                                        <img class="see_more_seasons_img"
+                                                            src="./images/Catalog_nav/Catalog_nav_top.png"
+                                                            alt="see_more">
+                                                    </button>
+                                                </li>
+                                                <li class="pos_rel_ovh">
+                                                    <ul class="dropdown_menu see_more_season_dropduwn">
+                                                        <li>
+                                                            <input type="checkbox" name="spring_autumn"
+                                                                id="spring_autumn_checkbox">
+                                                            <h5>Осень — Весна</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="winter" id="winter_checkbox">
+                                                            <h5>Зима</h5>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="summer" id="summer_checkbox">
+                                                            <h5>Лето</h5>
+                                                        </li>
+                                                    </ul>
                                                 </li>
                                             </ul>
                                         </li>
+                                        <li>
+                                            <input type="checkbox" name="news" id="news_checkbox">
+                                            <h3>Новинки</h3>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="sales" id="sales_checkbox">
+                                            <h3>Распродажа</h3>
+                                        </li>
                                     </ul>
                                 </div>
-                                <div id="Target1" class="catalog_products"></div>
+                                <div id="Target1" class="catalog_products">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div id="Sales_product_list" class="display_none"">
                         <div class=" flex_col">
-                            <h2 class="page_name">распродажа</h2>
-                            <div id="Target2"></div>
+                        <h2 class="page_name">распродажа</h2>
+                        <div id="Target2">
                         </div>
+                    </div>
                     </div>
                     <div id="New_product_list" class="display_none"">
                         <div class=" flex_col">
                     <h2 class="page_name">новинки</h2>
                     <div id="Target3"></div>
+                </div>
+                    </div>
+                    <div id="News" class="display_none"">
+                        <div class=" flex_col">
+                            <h2 class="page_name">новости</h2>
+                            <div id="News_page_content">
+                                <div class="news_item news_1">
+                                    <div>
+                                        <img src="./images/news_img/news_img.png" alt="news">
+                                    </div>
+                                    <h2>
+                                        Sit volutpat sem augue massa vitae nunc morbi adipiscing ...
+                                    </h2>
+                                    <h3>
+                                        Metus nibh odio sit rhoncus at dis ultricies lacinia nec. Posuere proin convallis
+                                        congue
+                                        faucibus sit feugiat blandit velit senectus. Sapien amet, sollicitudin diam sed
+                                        congue.
+                                        Molestie laoreet a suspendisse erat tellus nibh scelerisque scelerisque ...
+                                    </h3>
+                                </div>
+                                <div class="news_item news_2">
+                                    <div>
+                                        <img src="./images/news_img/news_img1.png" alt="news_1">
+                                    </div>
+                                    <h2>
+                                        Sit volutpat sem augue massa vitae nunc morbi adipiscing ...
+                                    </h2>
+                                    <h3>
+                                        Metus nibh odio sit rhoncus at dis ultricies lacinia nec. Posuere proin convallis
+                                        congue
+                                        faucibus sit feugiat blandit velit senectus. Sapien amet, sollicitudin diam sed
+                                        congue.
+                                        Molestie laoreet a suspendisse erat tellus nibh scelerisque scelerisque ...
+                                    </h3>
+                                </div>
+                                <div class="news_item news_3">
+                                    <div>
+                                        <img src="./images/news_img/news_img2.png" alt="news_2">
+                                    </div>
+                                    <h2>
+                                        Sit volutpat sem augue massa vitae nunc morbi adipiscing ...
+                                    </h2>
+                                    <h3>
+                                        Metus nibh odio sit rhoncus at dis ultricies lacinia nec. Posuere proin convallis
+                                        congue
+                                        faucibus sit feugiat blandit velit senectus. Sapien amet, sollicitudin diam sed
+                                        congue.
+                                        Molestie laoreet a suspendisse erat tellus nibh scelerisque scelerisque ...
+                                    </h3>
+                                </div>
+                                <div class="news_item news_4">
+                                    <div>
+                                        <img src="./images/news_img/news_img3.png" alt="news_3">
+                                    </div>
+                                    <h2>
+                                        Sit volutpat sem augue massa vitae nunc morbi adipiscing ...
+                                    </h2>
+                                    <h3>
+                                        Metus nibh odio sit rhoncus at dis ultricies lacinia nec. Posuere proin convallis
+                                        congue
+                                        faucibus sit feugiat blandit velit senectus. Sapien amet, sollicitudin diam sed
+                                        congue.
+                                        Molestie laoreet a suspendisse erat tellus nibh scelerisque scelerisque ...
+                                    </h3>
+                                </div>
+                                <div class="news_item news_5">
+                                    <div>
+                                        <img src="./images/news_img/news_img4.png" alt="news_4">
+                                    </div>
+                                    <h2>
+                                        Sit volutpat sem augue massa vitae nunc morbi adipiscing ...
+                                    </h2>
+                                    <h3>
+                                        Metus nibh odio sit rhoncus at dis ultricies lacinia nec. Posuere proin convallis
+                                        congue
+                                        faucibus sit feugiat blandit velit senectus. Sapien amet, sollicitudin diam sed
+                                        congue.
+                                        Molestie laoreet a suspendisse erat tellus nibh scelerisque scelerisque ...
+                                    </h3>
+                                </div>
+                                <div class="news_item news_6">
+                                    <div>
+                                        <img src="./images/news_img/news_img5.png" alt="news_5">
+                                    </div>
+                                    <h2>
+                                        Sit volutpat sem augue massa vitae nunc morbi adipiscing ...
+                                    </h2>
+                                    <h3>
+                                        Metus nibh odio sit rhoncus at dis ultricies lacinia nec. Posuere proin convallis
+                                        congue
+                                        faucibus sit feugiat blandit velit senectus. Sapien amet, sollicitudin diam sed
+                                        congue.
+                                        Molestie laoreet a suspendisse erat tellus nibh scelerisque scelerisque ...
+                                    </h3>
+                                </div>
+                                <div class="news_item news_7">
+                                    <div>
+                                        <img src="./images/news_img/news_img6.png" alt="news_6">
+                                    </div>
+                                    <h2>
+                                        Sit volutpat sem augue massa vitae nunc morbi adipiscing ...
+                                    </h2>
+                                    <h3>
+                                        Metus nibh odio sit rhoncus at dis ultricies lacinia nec. Posuere proin convallis
+                                        congue
+                                        faucibus sit feugiat blandit velit senectus. Sapien amet, sollicitudin diam sed
+                                        congue.
+                                        Molestie laoreet a suspendisse erat tellus nibh scelerisque scelerisque ...
+                                    </h3>
+                                </div>
+                            </div>
+                            <button>Показать все</button>
                         </div>
                     </div>
-                    <div id="News" class="display_none""></div>
                     <div id="News_article" class="display_none""></div>
                     <div id="Payment_delivery" class="display_none""></div>
                     <div id="Contakts" class="display_none""></div>
@@ -465,109 +555,113 @@
                 </div>
             </div>
             <div class=" footer">
-                <div class="flex_col_center w_100">
-                    <div class="flex_sb w_80">
-                        <ul>
-                            <li>
-                                <h2>Каталог продукции</h2>
-                            </li>
-                            <li>
-                                <ul class="no_gap">
-                                    <li>
-                                        <h5>Летняя коллекция</h5>
-                                    </li>
-                                    <li>
-                                        <h5>Зимняя коллекция</h5>
-                                    </li>
-                                    <li>
-                                        <h5>Весна / Осень</h5>
-                                    </li>
-                                    <li>
-                                        <h5>Новинки</h5>
-                                    </li>
-                                    <li>
-                                        <h5>Распродажа</h5>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <h2>Информация</h2>
-                            </li>
-                            <li>
-                                <ul class="no_gap">
-                                    <li>
-                                        <h5>Новости</h5>
-                                    </li>
-                                    <li>
-                                        <h5>FAQ</h5>
-                                    </li>
-                                    <li>
-                                        <h5>Таблица размеров</h5>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <h2>Компания</h2>
-                            </li>
-                            <li>
-                                <ul class="no_gap">
-                                    <li>
-                                        <h5>Как купить оптом</h5>
-                                    </li>
-                                    <li>
-                                        <h5>Оплата и доставка</h5>
-                                    </li>
-                                    <li>
-                                        <h5>О Компании</h5>
-                                    </li>
-                                    <li>
-                                        <h5>Партнерам</h5>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <h2>Контакты</h2>
-                            </li>
-                            <li>
-                                <ul class="no_gap">
-                                    <li>
-                                        <h5>050 000 00 00</h5>
-                                    </li>
-                                    <li>
-                                        <h5>050 000 00 00</h5>
-                                    </li>
-                                    <li>
-                                        <h5>mymail@mail.com</h5>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <img src="./images/Footter_img/facebook.png" alt="facebook">
-                                    <img src="./images/Footter_img/instagram.png" alt="instagram">
-                                    <img src="./images/Footter_img/vk.png" alt="vkontakte">
-                                    <img src="./images/Footter_img/odnoklassniki 1.png" alt="odnoklassniki">
-                                    <img src="./images/Footter_img/skype.png" alt="skype">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="w_80">
-                        <h6>Copyright © 2020, Climatica</h6>
-                    </div>
+            <div class="flex_col_center w_100">
+                <div class="flex_sb w_80">
+                    <ul>
+                        <li>
+                            <h2>Каталог продукции</h2>
+                        </li>
+                        <li>
+                            <ul class="no_gap">
+                                <li>
+                                    <h5>Летняя коллекция</h5>
+                                </li>
+                                <li>
+                                    <h5>Зимняя коллекция</h5>
+                                </li>
+                                <li>
+                                    <h5>Весна / Осень</h5>
+                                </li>
+                                <li>
+                                    <h5>Новинки</h5>
+                                </li>
+                                <li>
+                                    <h5>Распродажа</h5>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h2>Информация</h2>
+                        </li>
+                        <li>
+                            <ul class="no_gap">
+                                <li>
+                                    <h5>Новости</h5>
+                                </li>
+                                <li>
+                                    <h5>FAQ</h5>
+                                </li>
+                                <li>
+                                    <h5>Таблица размеров</h5>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h2>Компания</h2>
+                        </li>
+                        <li>
+                            <ul class="no_gap">
+                                <li>
+                                    <h5>Как купить оптом</h5>
+                                </li>
+                                <li>
+                                    <h5>Оплата и доставка</h5>
+                                </li>
+                                <li>
+                                    <h5>О Компании</h5>
+                                </li>
+                                <li>
+                                    <h5>Партнерам</h5>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h2>Контакты</h2>
+                        </li>
+                        <li>
+                            <ul class="no_gap">
+                                <li>
+                                    <h5>050 000 00 00</h5>
+                                </li>
+                                <li>
+                                    <h5>050 000 00 00</h5>
+                                </li>
+                                <li>
+                                    <h5>mymail@mail.com</h5>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./images/Footter_img/facebook.png" alt="facebook">
+                                <img src="./images/Footter_img/instagram.png" alt="instagram">
+                                <img src="./images/Footter_img/vk.png" alt="vkontakte">
+                                <img src="./images/Footter_img/odnoklassniki 1.png" alt="odnoklassniki">
+                                <img src="./images/Footter_img/skype.png" alt="skype">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w_80">
+                    <h6>Copyright © 2020, Climatica</h6>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+
     <div id="Thnks"></div>
     <div id="Order_form_1"></div>
     <div id="order_form_2"></div>
+
+
+
 </body>
 <script src="./climatica.js"></script>
 
