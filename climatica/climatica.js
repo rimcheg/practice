@@ -71,6 +71,8 @@ document.getElementById('News_page').onclick = Page_toogle('News_page', '#News',
 document.getElementById('Payment_page').onclick = Page_toogle('Payment_page', '#Payment_delivery', 'Payment_delivery');
 document.getElementById('Contacts_page').onclick = Page_toogle('Contacts_page', '#Contakts', 'Contakts');
 document.getElementById('Cize_table_button').onclick = Page_toogle('Cize_table_button', '#Size_table', 'Size_table');
+document.getElementById('New_button').onclick = Page_toogle('New_product', '#New_product_list', 'New_product_list');
+document.getElementById('Sale_button').onclick = Page_toogle('Sales', '#Sales_product_list', 'Sales_product_list');
 
 ///////////////////////////////////////////////////
 
@@ -335,7 +337,7 @@ fetch("https://fakerapi.it/api/v1/products?_quantity=20&_taxes=25&_categories_ty
                 product_img_section.appendChild(sales_img);
                 let for_sale = product_card.cloneNode(true);
                 target2.appendChild(for_sale);
-                if (target5.childElementCount < 4) {
+                if (target5.childElementCount < 3) {
                     let for_home_sale = product_card.cloneNode(true);
                     target5.appendChild(for_home_sale)
                 }
@@ -344,7 +346,7 @@ fetch("https://fakerapi.it/api/v1/products?_quantity=20&_taxes=25&_categories_ty
                 product_img_section.appendChild(new_img);
                 let for_new = product_card.cloneNode(true);
                 target3.appendChild(for_new);
-                if (target4.childElementCount < 4) {
+                if (target4.childElementCount < 3) {
                     let for_home_new = product_card.cloneNode(true);
                     target4.appendChild(for_home_new)
                 }
@@ -362,7 +364,7 @@ let news_target = document.querySelector('#news_target');
 for (i = 0; i < news_arr.length; i++) {
     let news = news_arr[i];
 
-    if (i < 4) {
+    if (i < 3) {
         let for_news = news.cloneNode(true);
         news_target.append(for_news);
     }
