@@ -166,21 +166,25 @@
                                             <h6>Качество – компания-производитель <br>
                                                 обуви из натуральной кожи</h6>
                                             <div>
-                                                <div class="ellipse"></div>
+                                                <div class="ellipse ellipse_1">+</div>
+                                                <span class="home_span span_1"></span>
+                                                <span class="home_span span_2"></span>
                                             </div>
                                         </div>
                                         <div class="pos_rel_t2">
                                             <h6>Скидки и персональные условия <br>
                                                 оптовика</h6>
                                             <div>
-                                                <div class="ellipse"></div>
+                                                <div class="ellipse ellipse_2">+</div>
+                                                <span class="home_span span_3"></span>
                                             </div>
                                         </div>
                                         <div class="pos_rel_t3">
                                             <h6>Постоянные обновления <br>
                                                 ассортимента</h6>
                                             <div>
-                                                <div class="ellipse"></div>
+                                                <div class="ellipse ellipse_3">+</div>
+                                                <span class="home_span span_4"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -276,7 +280,7 @@
                                             alias!
                                         </h4>
                                     </div>
-                                    <button>Просмотреть</button>
+                                    <button id="Button_size_table">Просмотреть</button>
                                 </div>
                                 <div class="home_info_img">
                                     <img src="./images/home_info/info1.png" alt="">
@@ -286,12 +290,13 @@
                                 <div class="flex_col_sb">
                                     <div>
                                         <h3>Как заказать</h3>
-                                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus earum
-                                        molestias, ea esse tempore maiores adipisci quod nulla quidem, delectus
-                                        officiis. Fuga eaque nesciunt optio temporibus delectus, quibusdam vel alias!
-                                    </h4>
+                                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus earum
+                                            molestias, ea esse tempore maiores adipisci quod nulla quidem, delectus
+                                            officiis. Fuga eaque nesciunt optio temporibus delectus, quibusdam vel
+                                            alias!
+                                        </h4>
                                     </div>
-                                    <button>Узнать</button>
+                                    <button id="Button_payment_delivery">Узнать</button>
                                 </div>
                                 <div class="home_info_img">
                                     <img src="./images/home_info/info2.png" alt="">
@@ -301,12 +306,13 @@
                                 <div class="flex_col_sb">
                                     <div>
                                         <h3>Партнерам</h3>
-                                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus earum
-                                        molestias, ea esse tempore maiores adipisci quod nulla quidem, delectus
-                                        officiis. Fuga eaque nesciunt optio temporibus delectus, quibusdam vel alias!
-                                    </h4>
+                                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus earum
+                                            molestias, ea esse tempore maiores adipisci quod nulla quidem, delectus
+                                            officiis. Fuga eaque nesciunt optio temporibus delectus, quibusdam vel
+                                            alias!
+                                        </h4>
                                     </div>
-                                    <button>подробнее</button>
+                                    <button id="Button_partner">подробнее</button>
                                 </div>
                                 <div class="home_info_img">
                                     <img src="./images/home_info/info3.png" alt="">
@@ -708,15 +714,102 @@
                         </div>
                     </div>
                     <div id="News_article" class="display_none"></div>
-                    <div id="Payment_delivery" class="display_none"></div>
+                    <div id="Payment_delivery" class="display_none">
+                        <div class="Payment_delivery">
+                            <h2>Оплата и доставка</h2>
+                            <div class="Payment_delivery_info">
+                                <h3>Оплата</h3>
+                                <h5>Возможные формы оплаты:</h5>
+                                <div class="flex mar_bot_60">
+                                    <div class="width_50">
+                                        <div class="height_50 flex_col_center">
+                                            <img src="./images/payment_delivery/cash.jpg" alt="cash">
+                                        </div>
+                                        <div class="height_50_text flex_col_center">
+                                            <h4>Наличными</h4>
+                                            <h5>Курьеру (в случае приобретения обуви в г. Москве или г. Курск) либо
+                                                наложенным платежом в отделении почты России (в случае заказа обуви из
+                                                других регионов России). Мы доставляем заказы только по России.</h5>
+                                        </div>
+                                    </div>
+                                    <div class="width_50">
+                                        <div class="height_50 flex_col_center">
+                                            <img src="./images/payment_delivery/cashless.jpg" alt="cashless">
+                                        </div>
+                                        <div class="height_50_text flex_col_center">
+                                            <h4>Безналичный расчет</h4>
+                                            <h5>Оплата банковской картой.</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span></span>
+                                <h3>Доставка Почтой России</h3>
+                                <div class="flex col_gap_30">
+                                    <div>
+                                        <img src="./images/payment_delivery/delivery.jpg" alt="delivery">
+                                    </div>
+                                    <div>
+                                        <h5>Доставка в другие города России осуществляется почтой России. Доставка
+                                            оплачивается покупателем в любом случае. Стоимость доставки зависит от
+                                            стоимости заказа, веса заказа и региона доставки. Кроме того, при оплате
+                                            наложенного платежа в отделениях Почты России клиент оплачивает стоимость
+                                            перевода денежных средств в соответствии с тарифами Почты России (во
+                                            избежание данной комиссии Почты России рекомендуем производить оплату
+                                            безналичным способом). Время формирования заказа до передачи со склада в
+                                            почтовое отделение от 2 до 8 дней.</h5>
+
+                                        <h5>Важно! Доставка заказа Почтой России осуществляется по предоплате. Данное
+                                            условие действительно только для новых клиентов и не касается постоянных
+                                            покупателей.</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div id="Contakts" class="display_none"></div>
                     <div id="About_company" class="display_none"></div>
-                    <div id="Partners" class="display_none"></div>
+                    <div id="Partners" class="display_none">
+                        <div class="flex_col gap_25">
+                            <h2>ПАРТНЕРАМ</h2>
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit amet justo nibh
+                                pellentesque neque magna suspendisse. Consectetur magnis tincidunt suspendisse mauris
+                                odio. Phasellus sed at laoreet morbi ornare quam scelerisque. Massa elementum, cursus
+                                sit pulvinar aenean in et. Nisl netus interdum pellentesque amet consectetur augue
+                                ultrices tempus. Nulla morbi laoreet gravida non risus nisl.</h3>
+
+                            <h3>Viverra aliquam ut ullamcorper posuere arcu. Feugiat urna quisque nunc vulputate. Sed
+                                congue ante placerat morbi lorem arcu tellus porta. Elit, lacinia mus egestas nulla
+                                venenatis dictum ut. Urna, sollicitudin turpis sit lacinia non lorem lacus. Vitae
+                                ullamcorper dui pellentesque aliquam. Volutpat etiam volutpat lorem eu. Et odio sit
+                                dolor quam sit ultrices dui. Nisl amet, in erat tristique diam viverra ornare. Molestie
+                                tortor cursus senectus non suspendisse diam tempor blandit est. Ullamcorper ultrices
+                                pulvinar quam facilisis eget suspendisse. Netus cras at egestas eget curabitur quis
+                                eget. Eget lectus scelerisque cras dignissim proin. Integer vestibulum enim quam tellus
+                                mollis eget tempus.</h3>
+
+                            <h3>
+                                Urna, lacinia lacus, mus porttitor sit id egestas adipiscing nec. Semper a ipsum quam
+                                amet magna ut. Auctor dignissim vel suspendisse nisl at venenatis ut diam posuere.
+                                Molestie integer at sed ac consectetur amet dui sapien. Id dui et adipiscing est orci
+                                malesuada euismod nunc, velit. Ultrices amet, nunc tristique et. Elementum libero mauris
+                                enim ut nunc egestas feugiat. Vulputate est enim molestie id non cum ut mauris fusce.
+                                Vehicula venenatis ac ut massa commodo risus. In eget mattis augue sit auctor congue.
+                                Adipiscing vitae scelerisque.</h3>
+
+                            <h3>
+                                Vitae ullamcorper dui pellentesque aliquam. Volutpat etiam volutpat lorem eu. Et odio
+                                sit dolor quam sit ultrices dui. Nisl amet, in erat tristique diam viverra ornare.
+                                Molestie tortor cursus senectus non suspendisse diam tempor blandit est. Ullamcorper
+                                ultrices pulvinar quam facilisis eget suspendisse. Netus cras at egestas eget curabitur
+                                quis eget. Eget lectus scelerisque cras dignissim proin. Integer vestibulum enim quam
+                                tellus mollis eget tempus.</h3>
+                        </div>
+                    </div>
                     <div id="Search" class="display_none"></div>
                     <div id="Search_not_found" class="display_none"></div>
                     <div id="FAQ" class="display_none"></div>
                     <div id="Size_table" class="display_none"></div>
-                    <div id="Size_table_without_women" class="display_none"></div>
+                    <!-- <div id="Size_table_without_women" class="display_none"></div> -->
                     <div id="Thank_you_page" class="display_none"></div>
                     <div id="Error_404" class="display_none"></div>
                 </div>

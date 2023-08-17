@@ -73,6 +73,9 @@ document.getElementById('Contacts_page').onclick = Page_toogle('Contacts_page', 
 document.getElementById('Cize_table_button').onclick = Page_toogle('Cize_table_button', '#Size_table', 'Size_table');
 document.getElementById('New_button').onclick = Page_toogle('New_product', '#New_product_list', 'New_product_list');
 document.getElementById('Sale_button').onclick = Page_toogle('Sales', '#Sales_product_list', 'Sales_product_list');
+document.getElementById('Button_partner').onclick = Page_toogle('Partners_page', '#Partners', 'Partners');
+document.getElementById('Button_payment_delivery').onclick = Page_toogle('Payment_page', '#Payment_delivery', 'Payment_delivery');
+document.getElementById('Button_size_table').onclick = Page_toogle('Cize_table_button', '#Size_table', 'Size_table');
 
 ///////////////////////////////////////////////////
 
