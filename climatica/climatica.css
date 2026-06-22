@@ -15,6 +15,8 @@ html, body {
 
 .climatica {
     display: flex;
+    width: 100%;
+    min-height: 100vh;
 }
 
 ul {
@@ -267,8 +269,8 @@ ul {
     box-sizing: border-box;
     overflow: hidden;
     padding-bottom: 100px;
-    flex-grow: 1;       /* Заставит блок занять всю ширину справа от меню */
-    width: 100%;        /* Базовая ширина для расчета flex */
+    flex-grow: 1;       /* Умное заполнение оставшейся ширины */
+    width: 0;           /* Позволяет флексу корректно рассчитывать пропорции без вылетов */
 }
 
 .pos_rel {
